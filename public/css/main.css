@@ -1,1 +1,127 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.localisation {
+  background-color: rgba(228, 228, 228, 0.741);
+  -webkit-box-shadow: inset 0px 10px 6px -8px #afafaf;
+          box-shadow: inset 0px 10px 6px -8px #afafaf;
+}
+
+.localisation form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px 0;
+}
+
+.localisation form span {
+  padding-right: 10px;
+  color: #3e3e3e;
+}
+
+.localisation form input {
+  background-color: transparent;
+  width: 8em;
+  border: none;
+}
+
+.localisation form input::-webkit-input-placeholder {
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.localisation form input:-ms-input-placeholder {
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.localisation form input::-ms-input-placeholder {
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.localisation form input::placeholder {
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(241, 241, 241, 0.476);
+}
+
+.call-to-action h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  width: 60%;
+  text-align: center;
+}
+
+.call-to-action p {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.call-to-action a {
+  margin-bottom: 25px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.2em;
+}
+
+.btn {
+  padding: 14px 17px;
+  color: #fff;
+  background: linear-gradient(171deg, #ff79da 0%, #9356dc 85%);
+  border-radius: 30px;
+  border: none;
+  opacity: 0.9;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

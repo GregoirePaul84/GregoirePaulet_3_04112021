@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+// Choix de localisation //
+
+.localisation {
+    background-color: $medium-gray;
+    box-shadow: inset 0px 10px 6px -8px rgb(175, 175, 175);
+    form {
+        @include flexbox-center;
+        padding: 17px 0;
+        span {
+            padding-right: 10px;
+            color: rgb(62, 62, 62);
+        }
+        input {
+            background-color: transparent;
+            width: 8em;
+            border: none;
+            &::placeholder {
+                color: rgb(62, 62, 62);
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Call to action - Block //
+
+.call-to-action {
+    @include flexbox-center;
+    flex-direction: column;
+    background-color: $light-gray;
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 1.3em;
+        width: 60%;
+        text-align: center;
+    }
+    p {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    a {
+        margin-bottom: 25px;
+    }
+}
