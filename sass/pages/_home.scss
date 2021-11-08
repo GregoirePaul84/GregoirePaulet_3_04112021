@@ -1,6 +1,3 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 // Choix de localisation //
 
@@ -19,7 +16,7 @@ body {
             width: 8em;
             border: none;
             &::placeholder {
-                color: rgb(62, 62, 62);
+                color: $dark-gray;
                 font-weight: 500;
                 font-size: 16px;
             }
@@ -36,7 +33,7 @@ body {
     h2 {
         margin-top: 40px;
         margin-bottom: 0;
-        font-size: 1.3em;
+        font-size: $h2-size;
         width: 60%;
         text-align: center;
     }
@@ -45,7 +42,102 @@ body {
         text-align: center;
         margin-bottom: 25px;
     }
-    a {
-        margin-bottom: 25px;
+    form {
+        margin-bottom: 45px;
+    }
+}
+
+// Fonctionnement - Block //
+
+.fonctionnement-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+    h2 {
+        font-size: $h2-size;
+    }
+    
+    &_restaurant {
+        @include fonctionnement-choice;
+        @include box-shadow;
+        span {
+            align-self: center;
+            padding-left: 40px;
+            color: $icon-gray;
+            font-size: 20px;
+        }
+    
+        p {
+            padding: 12px 25px;
+            font-weight: 500;
+        }
+    
+        &:hover {
+            background-color: #e7daf5;
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &::before {
+            content: "1";
+            @include fonctionnement-numbers;
+        }
+    }
+
+    &_menu {
+        @include fonctionnement-choice;
+        @include box-shadow;
+        span {
+            align-self: center;
+            padding-left: 40px;
+            color: $icon-gray;
+            font-size: 20px;
+        }
+    
+        p {
+            padding: 12px 25px;
+            font-weight: 500;
+        }
+    
+        &:hover {
+            background-color: #e7daf5;
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &::before {
+            content: "2";
+            @include fonctionnement-numbers;
+        }
+    }
+
+    &_degustez {
+        @include fonctionnement-choice;
+        @include box-shadow;
+        span {
+            align-self: center;
+            padding-left: 40px;
+            color: $icon-gray;
+            font-size: 20px;
+        }
+    
+        p {
+            padding: 12px 25px;
+            font-weight: 500;
+        }
+    
+        &:hover {
+            background-color: #e7daf5;
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &::before {
+            content: "3";
+            @include fonctionnement-numbers;
+        }
     }
 }
