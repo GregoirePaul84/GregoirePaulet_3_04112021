@@ -24,12 +24,13 @@
     }
 }
 
-// Call to action - Block //
+// Call to action //
 
 .call-to-action {
     @include flexbox-center;
     flex-direction: column;
     background-color: $light-gray;
+    margin-bottom: 3em;
     h2 {
         margin-top: 40px;
         margin-bottom: 0;
@@ -47,12 +48,13 @@
     }
 }
 
-// Fonctionnement - Block //
+// Fonctionnement //
 
 .fonctionnement-block {
     display: flex;
     flex-direction: column;
-    margin: 0 1.5em;
+    margin: $margin-page-block;
+    margin-bottom: 2em;
     h2 {
         font-size: $h2-size;
     }
@@ -61,10 +63,7 @@
         @include fonctionnement-choice;
         @include box-shadow;
         span {
-            align-self: center;
-            padding-left: 40px;
-            color: $icon-gray;
-            font-size: 20px;
+            @include fonctionnement-icons;
         }
     
         p {
@@ -89,10 +88,7 @@
         @include fonctionnement-choice;
         @include box-shadow;
         span {
-            align-self: center;
-            padding-left: 40px;
-            color: $icon-gray;
-            font-size: 20px;
+            @include fonctionnement-icons;
         }
     
         p {
@@ -117,10 +113,7 @@
         @include fonctionnement-choice;
         @include box-shadow;
         span {
-            align-self: center;
-            padding-left: 40px;
-            color: $icon-gray;
-            font-size: 20px;
+            @include fonctionnement-icons;
         }
     
         p {
@@ -140,4 +133,62 @@
             @include fonctionnement-numbers;
         }
     }
+}
+
+// Restaurants //
+
+.restaurants-block {
+    background-color: $medium-gray;
+    h2 {
+        font-size: $h2-size;
+        margin: $margin-page-block;
+        padding-bottom: 35px;
+        padding-top: 35px;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card {
+    margin: $margin-page-block;
+    margin-bottom: 20px;
+    height: 275px;
+    &__img {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .card__new {
+            @include card-new;
+        }
+    }
+
+    &__photo {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+
+    &__content {
+        background-color: #fff;
+        height: 75px;
+        border-radius: 0 0 25px 25px;
+        position: relative;
+        h3 {
+            margin: 0 0 0 20px;
+            padding-top: 10px;
+        }
+        p {
+            margin: 10px 0 0 20px;
+        }
+        span {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 25px;
+        }
+    }
+    
 }

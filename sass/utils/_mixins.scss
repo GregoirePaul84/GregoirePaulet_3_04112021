@@ -9,10 +9,16 @@
     position: relative;
     border-radius: 25px;
     background-color: $medium-gray;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     cursor: pointer;
     transition: background-color 500ms;
+}
 
+@mixin fonctionnement-icons {
+    align-self: center;
+    padding-left: 40px;
+    color: $icon-gray;
+    font-size: 20px;
 }
 
 @mixin fonctionnement-numbers {
@@ -32,4 +38,15 @@
 @mixin box-shadow-hover {
     box-shadow: 5px 6px 8px rgb(174, 174, 174);
 
+}
+
+@mixin card-new {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: $color-tertiary;
+    padding: 7px 15px;
+    color: rgb(25, 162, 114);
+    font-weight: 600;
+    border-radius: 3px;
 }
