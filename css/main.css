@@ -290,11 +290,13 @@ body img {
 .card {
   margin: 0 5%;
   margin-bottom: 20px;
-  height: 275px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 25px;
 }
 
 .card__img {
-  height: 200px;
+  height: 175px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -305,9 +307,10 @@ body img {
   right: 15px;
   top: 15px;
   background-color: #99E2D0;
-  padding: 7px 15px;
-  color: #19a272;
-  font-weight: 600;
+  padding: 6px 13px;
+  color: #10a470;
+  font-size: 13.5px;
+  font-weight: 500;
   border-radius: 3px;
 }
 
@@ -318,44 +321,54 @@ body img {
 }
 
 .card__content {
-  background-color: #fff;
   height: 75px;
   border-radius: 0 0 25px 25px;
   position: relative;
 }
 
 .card__content h3 {
-  margin: 0 0 0 20px;
-  padding-top: 10px;
+  margin: 15px 0 0 12px;
+  font-size: 1.05em;
 }
 
 .card__content p {
-  margin: 10px 0 0 20px;
+  margin: 6px 0 0 12px;
 }
 
-.card__content .far {
+.card__content span {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 8px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.card__content span .far {
   font-size: 23px;
-  color: rgba(19, 19, 19, 0.877);
+  color: rgba(41, 41, 41, 0.877);
 }
 
-.card__content .fas {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+.card__content span .fas {
+  bottom: 0.2px;
   font-size: 23px;
   color: transparent;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
-.card__content .fas:hover {
+.card__content span:hover .far {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff79da), color-stop(89%, #9356dc));
+  background: linear-gradient(0deg, #ff79da 30%, #9356dc 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card__content span:hover .fas {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff79da), color-stop(89%, #9356dc));
   background-image: linear-gradient(0deg, #ff79da 30%, #9356dc 89%);
   background-clip: text;
