@@ -17,7 +17,7 @@ body img {
 }
 
 .localisation {
-  background-color: rgba(228, 228, 228, 0.741);
+  background-color: #eaeaea;
   -webkit-box-shadow: inset 0px 10px 6px -8px #afafaf;
           box-shadow: inset 0px 10px 6px -8px #afafaf;
 }
@@ -84,7 +84,7 @@ body img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(241, 241, 241, 0.476);
+  background-color: #f6f6f6;
   margin-bottom: 3em;
 }
 
@@ -128,7 +128,7 @@ body img {
   display: flex;
   position: relative;
   border-radius: 25px;
-  background-color: rgba(228, 228, 228, 0.741);
+  background-color: #f6f6f6;
   margin-bottom: 1.5em;
   cursor: pointer;
   -webkit-transition: background-color 500ms;
@@ -176,7 +176,7 @@ body img {
   display: flex;
   position: relative;
   border-radius: 25px;
-  background-color: rgba(228, 228, 228, 0.741);
+  background-color: #f6f6f6;
   margin-bottom: 1.5em;
   cursor: pointer;
   -webkit-transition: background-color 500ms;
@@ -224,7 +224,7 @@ body img {
   display: flex;
   position: relative;
   border-radius: 25px;
-  background-color: rgba(228, 228, 228, 0.741);
+  background-color: #f6f6f6;
   margin-bottom: 1.5em;
   cursor: pointer;
   -webkit-transition: background-color 500ms;
@@ -267,7 +267,7 @@ body img {
 }
 
 .restaurants-block {
-  background-color: rgba(228, 228, 228, 0.741);
+  background-color: #eaeaea;
 }
 
 .restaurants-block h2 {
@@ -285,6 +285,7 @@ body img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 1120px;
 }
 
 .card {
@@ -364,6 +365,7 @@ body img {
 .card__content span:hover .far {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff79da), color-stop(89%, #9356dc));
   background: linear-gradient(0deg, #ff79da 30%, #9356dc 89%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -392,6 +394,34 @@ header {
 header h1 {
   font-family: 'Shrikhand', cursive;
   font-size: 2.2em;
+  font-weight: 500;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  height: 175px;
+}
+
+footer h3 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  margin: 0 0 15px 20px;
+  padding-top: 20px;
+}
+
+footer p {
+  margin: 5px 0 8px 20px;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+footer p i {
+  font-size: 13px;
+  width: 13px;
+  padding-right: 8px;
 }
 
 .btn {
