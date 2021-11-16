@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
@@ -14,6 +15,36 @@ body a {
 body img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@-webkit-keyframes menu-appear {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+  }
+}
+
+@keyframes menu-appear {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: opacity(1);
+            transform: opacity(1);
+  }
 }
 
 .localisation {
@@ -390,6 +421,162 @@ body img {
           transform: scale(1);
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
+.left-arrow {
+  padding-top: 10px;
+  position: absolute;
+  left: 1.5em;
+  font-size: 1.1em;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: -1;
+}
+
+.main-restaurant-française {
+  background-color: #f6f6f6;
+  position: relative;
+  bottom: 60px;
+  border-radius: 50px 50px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-restaurant-française .main-title {
+  padding-top: 30px;
+}
+
+.main-restaurant-française h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-left: 4%;
+  margin-top: 0;
+}
+
+.main-restaurant-française .heart-block {
+  position: absolute;
+  right: 40px;
+  top: 32px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.main-restaurant-française .heart-block .far {
+  font-size: 23px;
+  opacity: 0.7;
+}
+
+.main-restaurant-française .heart-block .fas {
+  bottom: 0.2px;
+  font-size: 23px;
+  color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+}
+
+.main-restaurant-française .heart-block:hover .far {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff79da), color-stop(89%, #9356dc));
+  background: linear-gradient(0deg, #ff79da 30%, #9356dc 89%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-restaurant-française .heart-block:hover .fas {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff79da), color-stop(89%, #9356dc));
+  background: linear-gradient(0deg, #ff79da 30%, #9356dc 89%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main-restaurant-française h3 {
+  margin-left: 4%;
+  font-size: 1em;
+  font-weight: normal;
+  color: #3e3e3e;
+}
+
+.main-restaurant-française h3 .h3-border {
+  border-bottom: 3px solid #99E2D0;
+}
+
+.main-restaurant-française .menu-meal {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 4px 6px #cecece;
+          box-shadow: 3px 4px 6px #cecece;
+  position: relative;
+  -webkit-animation: menu-appear 3s;
+          animation: menu-appear 3s;
+}
+
+.main-restaurant-française .menu-meal .menu-meal_text {
+  width: 70%;
+  margin-left: 4%;
+}
+
+.main-restaurant-française .menu-meal .menu-meal_text h4 {
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+
+.main-restaurant-française .menu-meal .menu-meal_text p {
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.main-restaurant-française .menu-meal .menu-meal_price {
+  font-weight: 500;
+  font-size: 1em;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.main-restaurant-française .btn-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.main-restaurant-française .btn-center .btn {
+  padding: 0.8em 3em;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,6 +587,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 header h1 {
