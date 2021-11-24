@@ -5,8 +5,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+body .block-page {
   min-width: 350px;
   max-width: 1280px;
+  margin: auto;
 }
 
 body a {
@@ -54,21 +59,35 @@ body img {
 @-webkit-keyframes loader-disappear {
   0% {
     opacity: 0.8;
-    z-index: 2;
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 
 @keyframes loader-disappear {
   0% {
     opacity: 0.8;
-    z-index: 2;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes zindex {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@keyframes zindex {
+  0% {
+    z-index: 2;
+  }
+  100% {
     z-index: -1;
   }
 }
@@ -503,22 +522,30 @@ body img {
           transform: scale(1);
 }
 
-body {
-  background-color: #ffffff;
-}
-
 .left-arrow {
   padding-top: 10px;
   position: absolute;
   left: 1.5em;
   font-size: 1.1em;
+  visibility: visible;
 }
 
-img {
+.left-arrow .index-link {
+  visibility: hidden;
+}
+
+.img-restaurant {
   width: 100%;
-  height: 50vh;
+  max-width: 1280px;
+  min-width: 350px;
+  height: 20em;
   position: absolute;
   z-index: -1;
+}
+
+.img-restaurant img {
+  width: 100%;
+  height: 100%;
 }
 
 .main-restaurant {
@@ -822,6 +849,14 @@ footer p i {
 }
 
 @media screen and (min-width: 768px) {
+  .left-arrow {
+    visibility: hidden;
+  }
+  .left-arrow .index-link {
+    visibility: visible;
+    padding-left: 1em;
+    color: #3e3e3e;
+  }
   .fonctionnement-steps {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -885,13 +920,71 @@ footer p i {
 }
 
 @media screen and (min-width: 996px) {
+  .fonctionnement-restaurants-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block {
+    margin: 0 3%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block h2 {
+    margin: 0;
+    padding: 35px 0;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block .fonctionnement-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2em;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block .fonctionnement-steps__restaurant {
+    max-width: 271px;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block .fonctionnement-steps__menu {
+    max-width: 271px;
+  }
+  .fonctionnement-restaurants-container .fonctionnement-block .fonctionnement-steps__dégustez {
+    max-width: 271px;
+  }
   .main-restaurant {
     margin: 17.1em 5% 3% 5%;
     border-radius: 40px;
   }
+  .main-restaurant .formula-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-restaurant .formula-container section {
+    width: 30%;
+  }
   .restaurants-block {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     border-radius: 40px;
-    margin: 0 5% 4% 5%;
+    margin: 0 5% 3% 2%;
   }
 }
 
@@ -927,8 +1020,8 @@ footer p i {
   inset: 0;
   z-index: 2;
   opacity: 0.8;
-  -webkit-animation: loader-disappear 4s 2s ease-in-out forwards;
-          animation: loader-disappear 4s 2s ease-in-out forwards;
+  -webkit-animation: loader-disappear 2s 2s ease-in-out forwards, zindex 0s 4s forwards;
+          animation: loader-disappear 2s 2s ease-in-out forwards, zindex 0s 4s forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
