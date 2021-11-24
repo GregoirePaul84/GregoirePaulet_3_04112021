@@ -564,6 +564,7 @@ body img {
 
 .main-restaurant .menu-main-content {
   width: 100%;
+  max-width: 1280px;
 }
 
 .main-restaurant .main-title {
@@ -920,7 +921,8 @@ footer p i {
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 5%;
+    max-width: 1280px;
+    margin: auto;
   }
   footer .link-container p {
     margin: 5px 0 8px 0;
