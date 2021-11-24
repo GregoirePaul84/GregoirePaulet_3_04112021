@@ -5,13 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-}
-
-body .block-page {
   min-width: 350px;
-  max-width: 1280px;
-  margin: auto;
 }
 
 body a {
@@ -236,6 +230,11 @@ body img {
 
 .call-to-action form {
   margin-bottom: 45px;
+}
+
+.main-content {
+  max-width: 1280px;
+  margin: auto;
 }
 
 .fonctionnement-block {
@@ -536,7 +535,6 @@ body img {
 
 .img-restaurant {
   width: 100%;
-  max-width: 1280px;
   min-width: 350px;
   height: 20em;
   position: absolute;
@@ -558,12 +556,21 @@ body img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 17.1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16em;
+}
+
+.main-restaurant .menu-main-content {
+  width: 100%;
 }
 
 .main-restaurant .main-title {
   padding-top: 36px;
   position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .main-restaurant h2 {
@@ -794,6 +801,7 @@ body img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
   margin-top: 2.5em;
   margin-bottom: 3.5em;
 }
@@ -912,6 +920,10 @@ footer p i {
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 5%;
+  }
+  footer .link-container p {
+    margin: 5px 0 8px 0;
   }
   .main-restaurant {
     margin: 17.1em 5% 3% 5%;
@@ -984,7 +996,7 @@ footer p i {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     border-radius: 40px;
-    margin: 0 5% 3% 2%;
+    margin: 0 3% 3% 2%;
   }
 }
 
