@@ -120,7 +120,7 @@ body img {
   }
 }
 
-@-webkit-keyframes fx {
+@-webkit-keyframes dotscale {
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -131,7 +131,7 @@ body img {
   }
 }
 
-@keyframes fx {
+@keyframes dotscale {
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1066,18 +1066,18 @@ footer p i {
   margin: 0 10px;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-animation: fx 1200ms ease infinite 1000ms;
-  animation: fx 1200ms ease infinite 1000ms;
+  -webkit-animation: dotscale 1200ms ease infinite 1000ms;
+          animation: dotscale 1200ms ease infinite 1000ms;
 }
 
 .loading-spinner .dot:nth-child(2) {
-  -webkit-animation: fx 1200ms ease infinite 1400ms;
-  animation: fx 1200ms ease infinite 1400ms;
+  -webkit-animation: dotscale 1200ms ease infinite 1400ms;
+          animation: dotscale 1200ms ease infinite 1400ms;
 }
 
 .loading-spinner .dot:nth-child(3) {
-  -webkit-animation: fx 1200ms ease infinite 1800ms;
-  animation: fx 1200ms ease infinite 1800ms;
+  -webkit-animation: dotscale 1200ms ease infinite 1800ms;
+          animation: dotscale 1200ms ease infinite 1800ms;
 }
 
 .text-pop-up-top {
