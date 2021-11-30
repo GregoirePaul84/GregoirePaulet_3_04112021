@@ -522,23 +522,23 @@ body img {
 }
 
 .main-restaurant .menu-meal:nth-child(1) {
-  -webkit-animation: menu-appear 2s both;
-  animation: menu-appear 2s both;
+  -webkit-animation: menu-appear 1.5s both;
+  animation: menu-appear 1.5s both;
 }
 
 .main-restaurant .menu-meal:nth-child(2) {
-  -webkit-animation: menu-appear 3s both;
-  animation: menu-appear 3s both;
+  -webkit-animation: menu-appear 2.5s both;
+  animation: menu-appear 2.5s both;
 }
 
 .main-restaurant .menu-meal:nth-child(3) {
-  -webkit-animation: menu-appear 4s both;
-  animation: menu-appear 4s both;
+  -webkit-animation: menu-appear 3.5s both;
+  animation: menu-appear 3.5s both;
 }
 
 .main-restaurant .menu-meal:nth-child(4) {
-  -webkit-animation: menu-appear 5s both;
-  animation: menu-appear 5s both;
+  -webkit-animation: menu-appear 4.5s both;
+  animation: menu-appear 4.5s both;
 }
 
 .left-arrow {
